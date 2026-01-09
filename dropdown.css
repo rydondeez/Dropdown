@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 30%);
+}
+
+.select-menu{
+    width: 380px;
+    margin: 150px;
+
+}
+.select-menu .selectbtn{
+    display: flex;
+    height: 55px;
+    color: hsl(0, 0%, 40%);
+    background-color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.selectbtn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .selectbtn i{
+    transform: rotate(-180deg);
+    
+}
+
+.select-menu .options{
+    position: relative;
+    padding: 0px;
+    margin-top: 10px ;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.select-menu.active .option{
+    display: none;
+
+}
+
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 8px;
+    align-items: center;
+    background: white;
+}
+
+.options .option:hover{
+    background: gainsboro;
+}
+
+.option .optiontxt{
+    font-size: 18px;
+    color: hsl(0, 0%, 20%);
+    padding: 0 65px;
+
+}
